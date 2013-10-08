@@ -4,8 +4,9 @@
 %endif
 
 Name:           apel
-Version:        1.1.2
-Release:        0%{?dist}
+Version:        1.1.3
+#Release:        0%{?dist}
+Release:	alpha1
 Summary:        APEL packages
 
 Group:          Development/Languages
@@ -33,7 +34,7 @@ apel-lib provides required libraries for the rest of APEL system.
 %package parsers
 Summary:        Parsers for APEL system
 Group:          Development/Languages
-Requires:       apel-lib >= 1.1.2
+Requires:       apel-lib >= 1.1.3
 Requires(pre):  shadow-utils
 
 %description parsers
@@ -43,7 +44,7 @@ supported by the APEL system: Torque, SGE and LSF.
 %package client
 Summary:        APEL client package
 Group:          Development/Languages
-Requires:       apel-lib >= 1.1.2, apel-ssm
+Requires:       apel-lib >= 1.1.3, apel-ssm
 Requires(pre):  shadow-utils
 
 %description client
@@ -54,7 +55,7 @@ SSM.
 %package server
 Summary:        APEL server package
 Group:          Development/Languages
-Requires:       apel-lib >= 1.1.2, apel-ssm
+Requires:       apel-lib >= 1.1.3-alpha1, apel-ssm
 Requires(pre):  shadow-utils
 
 %description server
